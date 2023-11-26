@@ -1,0 +1,12 @@
+{
+  "fast import vitest": {
+    "prefix": "ifv",
+    "body": ["import { describe, it, expect } from 'vitest'"],
+    "description": ""
+  },
+  "fast it": {
+    "prefix": "vit",
+    "body": ["it('$1', () => {})"],
+    "description": ""
+  }
+}
