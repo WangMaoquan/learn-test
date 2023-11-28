@@ -5,7 +5,7 @@ export const userAge = () => {
   return 1;
 };
 
-export const fetchUserAge = () => {
+export const fetchUserAge: () => Promise<number> = () => {
   // 这里可以通过 api 请求
   return new Promise((resolve) => {
     setTimeout(() => {
