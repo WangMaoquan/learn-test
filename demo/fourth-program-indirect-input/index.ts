@@ -22,3 +22,9 @@ export const getDoubleUserAgeByClassFun = () => {
 export const tellName = () => {
   return name + '111';
 };
+
+// node process.env
+// vite webpack import.meta.xxx
+export const getEnvUserAge = () => {
+  return Number(process.env.USER_AGE);
+};
