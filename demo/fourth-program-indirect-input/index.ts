@@ -1,5 +1,6 @@
 import { User, fetchUserAge, userAge } from './User';
 import { name } from './config';
+import { innerHeightFn } from './height';
 export const add = (a: number, b: number) => a + b;
 
 export const doubleUserAge = () => userAge() * 2;
@@ -31,4 +32,8 @@ export const getEnvUserAge = () => {
 
 export const getGlobalObjectUserAge = () => {
   return user.age;
+};
+
+export const getDoubleInnerHeight = () => {
+  return innerHeightFn() * 2;
 };
