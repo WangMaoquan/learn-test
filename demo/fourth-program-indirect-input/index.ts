@@ -1,5 +1,5 @@
 import { User, fetchUserAge, userAge } from './User';
-
+import { name } from './config';
 export const add = (a: number, b: number) => a + b;
 
 export const doubleUserAge = () => userAge() * 2;
@@ -17,4 +17,8 @@ export const getDoubleUserAgeByClassProperty = () => {
 export const getDoubleUserAgeByClassFun = () => {
   const user = new User();
   return user.getAge() * 2;
+};
+
+export const tellName = () => {
+  return name + '111';
 };

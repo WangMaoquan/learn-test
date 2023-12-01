@@ -6,3 +6,5 @@ export const config = {
   },
   age: 20,
 };
+
+export const name = 'decade';
