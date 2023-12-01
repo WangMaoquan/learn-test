@@ -28,3 +28,7 @@ export const tellName = () => {
 export const getEnvUserAge = () => {
   return Number(process.env.USER_AGE);
 };
+
+export const getGlobalObjectUserAge = () => {
+  return user.age;
+};
