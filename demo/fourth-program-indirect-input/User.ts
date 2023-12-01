@@ -16,11 +16,6 @@ export const fetchUserAge: () => Promise<number> = () => {
   });
 };
 
-interface User {
-  name: string;
-  age: number;
-}
-
 /*
 模拟 调用第三方模块
 */
@@ -28,4 +23,12 @@ export async function getDoubleUserAgeByAxios() {
   // const user: User = await axios('/user/1');
   const user: User = await axios.get('/user/1');
   return user.age * 2;
+}
+
+export class User {
+  age = 18;
+  name = 'decade';
+  getAge() {
+    return this.age;
+  }
 }
